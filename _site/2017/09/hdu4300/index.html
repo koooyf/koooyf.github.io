@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <title>hdu4300</title>
+  <meta name="description" content="Clairewd’s message">
+  <meta name="author" content="Wei Wang">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="hdu4300">
+  <meta name="twitter:description" content="Clairewd’s message">
+  
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="hdu4300">
+  <meta property="og:description" content="Clairewd’s message">
+  
+  <link rel="icon" type="image/png" href="/assets/images/favicon.png" />
+  <link href="/assets/images/favicon.png" rel="shortcut icon" type="image/png">
+  
+  <link rel="stylesheet" href="/css/main.css">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <link rel="canonical" href="http://localhost:4000/2017/09/hdu4300/">
+  <link rel="alternate" type="application/rss+xml" title="Koooyf" href="http://localhost:4000/feed.xml">
+  
+  <meta name="google-site-verification" content="1-1ZlHoRvM0T2FqPbW2S-qLgYXN6rsn52kErlMPd_gw" />
+  
+</head>
+
+
+  <body>
+
+    <span class="mobile btn-mobile-menu">
+        <i class="fa fa-list btn-mobile-menu__icon"></i>
+        <i class="fa fa-angle-up btn-mobile-close__icon hidden"></i>
+    </span>
+    
+    <header class="panel-cover panel-cover--collapsed" style="background-image: url('/assets/images/background-cover.jpg')">
+  <div class="panel-main">
+
+    <div class="panel-main__inner panel-inverted">
+    <div class="panel-main__content">
+
+        <a href="/#blog" title="前往 Koooyf 的主页" class="blog-button"><img src="/assets/images/avatar.jpg" width="80" alt="Koooyf logo" class="panel-cover__logo logo" /></a>
+        <h1 class="panel-cover__title panel-title"><a href="/#blog" title="link to homepage for Koooyf" class="blog-button">Koooyf</a></h1>
+        
+        <span class="panel-cover__subtitle panel-subtitle">Aragaki Yui is my wife</span>
+        
+        <hr class="panel-cover__divider" />
+        <p class="panel-cover__description">Share interest and ACM algorithm</p>
+        <hr class="panel-cover__divider panel-cover__divider--secondary" />
+        
+        
+        
+        <div class="navigation-wrapper">
+          <div>
+            <nav class="cover-navigation cover-navigation--primary">
+              <ul class="navigation">
+                <li class="navigation__item"><a href="/#blog" title="Visit blog" class="blog-button">Blog</a></li>
+                
+              </ul>
+            </nav>
+          </div>
+          
+          <div><nav class="cover-navigation navigation--social">
+  <ul class="navigation">
+
+  
+  <!-- Weibo -->
+  <li class="navigation__item">
+    <a href="http://weibo.com/2632411923" title="@2632411923 的微博" target="_blank">
+      <i class='social fa fa-weibo'></i>
+      <span class="label">Weibo</span>
+    </a>
+  </li>
+  
+
+  
+  <!-- Github -->
+  <li class="navigation__item">
+    <a href="https://github.com/koooyf" title="@koooyf 的 Github" target="_blank">
+      <i class='social fa fa-github'></i>
+      <span class="label">Github</span>
+    </a>
+  </li>
+  
+  
+  
+  <!-- Twitter -->
+  <li class="navigation__item">
+    <a href="http://twitter.com/koooyf" title="@koooyf" target="_blank">
+      <i class='social fa fa-twitter'></i>
+      <span class="label">Twitter</span>
+    </a>
+  </li>
+  
+
+  
+
+  <!-- RSS -->
+  <li class="navigation__item">
+    <a href="/feed.xml" rel="author" title="RSS" target="_blank">
+      <i class='social fa fa-rss'></i>
+      <span class="label">RSS</span>
+    </a>
+  </li>
+
+  
+  <!-- Email -->
+  <li class="navigation__item">
+    <a href="mailto:kyf19970408@163.com" title="Contact me">
+      <i class='social fa fa-envelope'></i>
+      <span class="label">Email</span>
+    </a>
+  </li>
+  
+
+  </ul>
+</nav>
+</div>
+        </div>
+      </div>
+    </div>
+    
+    
+    <div class="panel-cover--overlay cover-red"></div>
+    
+  </div>
+</header>
+
+
+    <div class="content-wrapper">
+        <div class="content-wrapper__inner">
+            <article class="post-container post-container--single" itemscope itemtype="http://schema.org/BlogPosting">
+  <header class="post-header">
+    <div class="post-meta">
+      <time datetime="2017-09-12 00:00:00 +0800" itemprop="datePublished" class="post-meta__date date">2017-09-12</time> &#8226; <span class="post-meta__tags tags">acm</span>
+    </div>
+    <h1 class="post-title">hdu4300</h1>
+  </header>
+
+  <section class="post">
+    <h1 id="clairewds-message">Clairewd’s message</h1>
+
+<p>Clairewd is a member of FBI. After several years concealing in BUPT, she intercepted some important messages and she was preparing for sending it to ykwd. They had agreed that each letter of these messages would be transfered to another one according to a conversion table. 
+Unfortunately, GFW(someone’s name, not what you just think about) has detected their action. He also got their conversion table by some unknown methods before. Clairewd was so clever and vigilant that when she realized that somebody was monitoring their action, she just stopped transmitting messages. But GFW knows that Clairewd would always firstly send the ciphertext and then plaintext(Note that they won’t overlap each other). But he doesn’t know how to separate the text because he has no idea about the whole message. However, he thinks that recovering the shortest possible text is not a hard task for you. 
+Now GFW will give you the intercepted text and the conversion table. You should help him work out this problem.</p>
+
+<h2 id="input">Input</h2>
+
+<p>The first line contains only one integer T, which is the number of test cases. 
+Each test case contains two lines. The first line of each test case is the conversion table S. S[i] is the ith latin letter’s cryptographic letter. The second line is the intercepted text which has n letters that you should recover. It is possible that the text is complete.</p>
+
+<p><strong>Hint</strong></p>
+
+<p>Range of test data</p>
+
+<p>T&lt;=100</p>
+
+<p>n&lt;=100000</p>
+
+<h2 id="output">Output</h2>
+
+<p>For each test case, output one line contains the shorest possible complete text.</p>
+
+<h2 id="sample-input">Sample Input</h2>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>2
+abcdefghijklmnopqrstuvwxyz
+abcdab
+qwertyuiopasdfghjklzxcvbnm
+qwertabcde
+</code></pre>
+</div>
+
+<h2 id="sample-output">Sample Output</h2>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>abcdabcd
+qwertabcde
+</code></pre>
+</div>
+
+<h2 id="题解">题解</h2>
+
+<p>因为一定是有一半密文一半明文，那么最短的密文一定是输入字符串的一半的位置开始找。也就是(len+1)/2的位置开始按照转换表转化，这样的话就可以得到test的nxet数组 找出最长的公共前后缀。然后需要加的字符就一目了然了。</p>
+
+<h2 id="代码">代码</h2>
+
+<div class="language-c++ highlighter-rouge"><pre class="highlight"><code><span class="cp">#include&lt;cstdio&gt;
+#include&lt;cstring&gt;
+#include&lt;iostream&gt;
+</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+<span class="kt">int</span> <span class="n">nx</span><span class="p">[</span><span class="mi">100005</span><span class="p">];</span>
+<span class="kt">char</span> <span class="n">ss</span><span class="p">[</span><span class="mi">100005</span><span class="p">],</span><span class="n">s</span><span class="p">[</span><span class="mi">100005</span><span class="p">],</span><span class="n">pp</span><span class="p">[</span><span class="mi">100005</span><span class="p">],</span><span class="n">c</span><span class="p">[</span><span class="mi">100005</span><span class="p">];</span>
+<span class="kt">void</span> <span class="nf">getnext</span><span class="p">(</span><span class="kt">char</span> <span class="o">*</span><span class="n">p</span><span class="p">)</span>
+<span class="p">{</span>
+	<span class="kt">int</span> <span class="n">k</span><span class="o">=-</span><span class="mi">1</span><span class="p">,</span><span class="n">j</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
+	<span class="n">nx</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">=-</span><span class="mi">1</span><span class="p">;</span>
+	<span class="kt">int</span> <span class="n">pLen</span><span class="o">=</span><span class="n">strlen</span><span class="p">(</span><span class="n">p</span><span class="p">);</span>
+	<span class="k">while</span><span class="p">(</span><span class="n">j</span><span class="o">&lt;</span><span class="n">pLen</span><span class="p">)</span>
+	<span class="p">{</span>
+		<span class="k">if</span><span class="p">(</span><span class="n">k</span><span class="o">==-</span><span class="mi">1</span><span class="o">||</span><span class="n">p</span><span class="p">[</span><span class="n">k</span><span class="p">]</span><span class="o">==</span><span class="n">p</span><span class="p">[</span><span class="n">j</span><span class="p">])</span>
+		<span class="p">{</span>
+			<span class="n">j</span><span class="o">++</span><span class="p">;</span>
+			<span class="n">k</span><span class="o">++</span><span class="p">;</span>
+          <span class="c1">//if(p[k]!=p[j])
+</span>			<span class="n">nx</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="o">=</span><span class="n">k</span><span class="p">;</span>
+          <span class="c1">//else
+</span>          <span class="c1">//nx[j]=nx[k]; 注释部分为优化.
+</span>		<span class="p">}</span>
+		<span class="k">else</span>
+			<span class="n">k</span><span class="o">=</span><span class="n">nx</span><span class="p">[</span><span class="n">k</span><span class="p">];</span>
+	<span class="p">}</span>
+<span class="p">}</span>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+<span class="p">{</span>
+	<span class="kt">int</span> <span class="n">t</span><span class="p">;</span>
+	<span class="n">scanf</span><span class="p">(</span><span class="s">"%d"</span><span class="p">,</span><span class="o">&amp;</span><span class="n">t</span><span class="p">);</span>
+	<span class="k">while</span><span class="p">(</span><span class="n">t</span><span class="o">--</span><span class="p">)</span>
+	<span class="p">{</span>
+		<span class="n">scanf</span><span class="p">(</span><span class="s">"%s"</span><span class="p">,</span><span class="n">s</span><span class="p">);</span>
+		<span class="n">scanf</span><span class="p">(</span><span class="s">"%s"</span><span class="p">,</span><span class="n">pp</span><span class="p">);</span>
+		<span class="kt">int</span> <span class="n">sLen</span><span class="o">=</span><span class="n">strlen</span><span class="p">(</span><span class="n">s</span><span class="p">);</span>
+		<span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;</span><span class="n">sLen</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">)</span>
+			<span class="n">ss</span><span class="p">[</span><span class="n">s</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">-</span><span class="sc">'a'</span><span class="p">]</span><span class="o">=</span><span class="n">i</span><span class="p">;</span>
+		<span class="n">strcpy</span><span class="p">(</span><span class="n">c</span><span class="p">,</span><span class="n">pp</span><span class="p">);</span>
+		<span class="kt">int</span> <span class="n">pLen</span><span class="o">=</span><span class="n">strlen</span><span class="p">(</span><span class="n">c</span><span class="p">);</span>
+		<span class="kt">int</span> <span class="n">n</span><span class="o">=</span><span class="p">(</span><span class="n">pLen</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span><span class="p">;</span>
+		<span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="n">n</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;</span><span class="n">pLen</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">)</span>
+		<span class="p">{</span>
+			<span class="n">c</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">=</span><span class="n">s</span><span class="p">[</span><span class="n">c</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">-</span><span class="sc">'a'</span><span class="p">];</span>
+		<span class="p">}</span>	
+		<span class="n">getnext</span><span class="p">(</span><span class="n">c</span><span class="p">);</span>
+		<span class="kt">int</span> <span class="n">k</span><span class="o">=</span><span class="n">pLen</span><span class="p">;</span>
+		<span class="k">while</span><span class="p">(</span><span class="n">nx</span><span class="p">[</span><span class="n">k</span><span class="p">]</span><span class="o">&gt;</span><span class="n">pLen</span><span class="o">-</span><span class="n">n</span><span class="p">)</span>
+		<span class="p">{</span>
+			<span class="n">k</span><span class="o">=</span><span class="n">nx</span><span class="p">[</span><span class="n">k</span><span class="p">];</span>	
+		<span class="p">}</span>
+<span class="c1">//		printf("%d\n",nx[k]);
+</span>			<span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">j</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">j</span><span class="o">&lt;</span><span class="n">pLen</span><span class="o">-</span><span class="n">nx</span><span class="p">[</span><span class="n">k</span><span class="p">];</span><span class="n">j</span><span class="o">++</span><span class="p">)</span>
+				<span class="n">printf</span><span class="p">(</span><span class="s">"%c"</span><span class="p">,</span><span class="n">pp</span><span class="p">[</span><span class="n">j</span><span class="p">]);</span>
+			<span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">j</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">j</span><span class="o">&lt;</span><span class="n">pLen</span><span class="o">-</span><span class="n">nx</span><span class="p">[</span><span class="n">k</span><span class="p">];</span><span class="n">j</span><span class="o">++</span><span class="p">)</span>
+				<span class="n">printf</span><span class="p">(</span><span class="s">"%c"</span><span class="p">,</span><span class="n">ss</span><span class="p">[</span><span class="n">pp</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="o">-</span><span class="sc">'a'</span><span class="p">]</span><span class="o">+</span><span class="sc">'a'</span><span class="p">);</span>
+		<span class="n">printf</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
+	<span class="p">}</span>
+	<span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+
+</code></pre>
+</div>
+
+
+  </section>
+</article>
+
+<section class="read-more">
+   
+   
+   
+   
+   <div class="read-more-item">
+       <span class="read-more-item-dim">更早的文章</span>
+       <h2 class="post-list__post-title post-title"><a href="/2017/09/hdu1686/" title="link to hdu1686">hdu1686</a></h2>
+       <p class="excerpt">OulipoThe French author Georges Perec (1936–1982) once wrote a book, La disparition, without the letter ‘e’. He was a member of the Oulipo group. A quote from the book:Tout avait Pair normal, mais tout s’affirmait faux. Tout avait Fair normal, d’a...&hellip;</p>
+       <div class="post-list__meta"><time datetime="2017-09-07 00:00:00 +0800" class="post-list__meta--date date">2017-09-07</time> &#8226; <span class="post-list__meta--tags tags">acm</span><a class="btn-border-small" href=/2017/09/hdu1686/>继续阅读</a></div>
+   </div>
+   
+</section>
+
+<!--<section class="post-comments">
+  
+    <div id="disqus_thread"></div>
+    <script>
+    
+    var disqus_config = function () {
+        this.page.url = "http://localhost:4000/2017/09/hdu4300/";
+        this.page.identifier = "/2017/09/hdu4300/";
+    };
+
+    var disqus_shortname = 'vno-jekyll';
+    
+    (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>要查看<a href="http://disqus.com/?ref_noscript"> Disqus </a>评论，请启用 JavaScript</noscript>
+    
+  
+  
+  
+  
+</section>
+-->
+
+            <!---<section class="footer">
+    <footer>
+    	<span class="footer__copyright">本站点采用<a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享 署名-非商业性使用-相同方式共享 4.0 国际 许可协议</a></span>
+        <span class="footer__copyright">由 <a href="https://jekyllrb.com">Jekyll</a> 于 2017-09-12 生成，感谢 <a href="https://www.digitalocean.com/?refcode=30ed2d146762">Digital Ocean</a> 为本站提供稳定的 VPS 服务</span>
+        <span class="footer__copyright">本站采用 <a href="https://github.com/onevcat/vno-jekyll">Vno - Jekyll</a> 作为主题，您可以在 GitHub 找到<a href="https://github.com/onevcat/OneV-s-Den">本站源码</a> - &copy; 2017</span>
+    </footer>
+</section>-->
+
+        </div>
+    </div>
+    
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+
+<script type="text/javascript" src="/js/main.js"></script>
+
+
+
+    
+  </body>
+
+</html>
